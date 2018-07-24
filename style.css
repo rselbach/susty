@@ -395,7 +395,7 @@ optgroup,
 textarea {
 	color: rgb(4, 4, 2);
 	font-family: "Helvetica Neue", Helvetica, Arial, Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "Nimbus Sans L", "Liberation Sans", Tahoma, Geneva, sans-serif;;
-	font-size: calc( 15px + 4 * (100vw / 1500));
+	font-size: calc( 12px + 4 * (100vw / 1500));
 	line-height: 1.5;
 }
 
@@ -424,7 +424,7 @@ pre {
 	font-family: "Courier 10 Pitch", Courier, monospace;
 	font-size: 15px;
 	font-size: 0.9375rem;
-	line-height: 1.6;
+	line-height: 1.2;
 	margin-bottom: 1.6em;
 	max-width: 100%;
 	overflow: auto;
@@ -433,8 +433,8 @@ pre {
 
 code, kbd, tt, var {
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-	font-size: 15px;
-	font-size: 0.9375rem;
+	font-size: 12px;
+	font-size: 0.75rem;
 }
 
 abbr, acronym {
@@ -599,9 +599,9 @@ textarea {
 # Links
 --------------------------------------------------------------*/
 a {
-	color: rgb(4, 4, 2);
+	color: #0e74b2;
 	text-decoration: none;
-	border-bottom: 0.2em solid transparent;
+	border-bottom: 0.1em solid transparent;
 }
 
 a#susty-back-link {
@@ -893,15 +893,16 @@ svg * {
 ## Content
 --------------------------------------------------------------*/
 #content {
-	max-width: 33em;
+	max-width: 43em;
 	margin: 0 auto;
 	padding: 0 1em;
 }
 
+/*
 article a, nav a {
 	background: rgb(252, 248, 243) none repeat scroll 0% 0%;
 	border-bottom: 0.1em dotted;
-}
+} */
 
 article > header > h1, article > header > h2 {
 	font-size: 2.4em;
