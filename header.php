@@ -23,19 +23,6 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'susty' ); ?></a>
 
 	<header id="masthead">
-<!--		<div class="logo">
-			<?php
-			if ( has_custom_logo() ) :
-				the_custom_logo();
-			else :
-				?>
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php echo file_get_contents( get_stylesheet_directory() . '/images/eco-chat.svg' ); ?><span class="screen-reader-text"><?php esc_html_e( 'Home', 'susty' ); ?></span></a>
-				<?php
-			endif;
-			?>
-		</div>
--->
-
 		<?php
 		if ( is_front_page() && is_home() && ! get_query_var( 'menu' ) ) :
 			?>
