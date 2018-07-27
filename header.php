@@ -33,23 +33,10 @@
 			<p><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 			<?php
 		endif;
-
-		if ( get_query_var( 'menu' ) ) :
-			?>
-			<a id="susty-back-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">&#x2716;<span class="screen-reader-text"><?php esc_html_e( 'Close menu', 'susty' ); ?></span></a>
-			<script>
-				var susty_home_url = '<?php echo esc_url( home_url( '/' ) ); ?>';
-				if ( 0 === document.referrer.indexOf( susty_home_url ) ) {
-					document.getElementById( 'susty-back-link' ).href = document.referrer;
-				}
-			</script>
-			<?php
-		else :
-			?>
-			<a href="<?php echo esc_url( ( get_option( 'permalink_structure' ) ? home_url( '/menu/' ) : home_url( '/?menu' ) ) ); ?>"><?php esc_html_e( 'Menu', 'susty' ); ?></a>
-			<?php
-		endif;
 		?>
+		<a href="<?php echo esc_url( ( get_option( 'permalink_structure' ) ? home_url( '/' ) : home_url( '/' ) ) ); ?>"><?php esc_html_e( 'Home', 'susty' ); ?></a>&nbsp;|&nbsp;
+		<a href="<?php echo esc_url( ( get_option( 'permalink_structure' ) ? home_url( '/about/' ) : home_url( '/?about' ) ) ); ?>"><?php esc_html_e( 'About', 'susty' ); ?></a>&nbsp;|&nbsp;
+		<a href="<?php echo esc_url( ( get_option( 'permalink_structure' ) ? home_url( '/archive/' ) : home_url( '/?archive' ) ) ); ?>"><?php esc_html_e( 'Archive', 'susty' ); ?></a>
 	</header>
 
 	<div id="content">

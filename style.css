@@ -395,7 +395,7 @@ optgroup,
 textarea {
 	color: rgb(4, 4, 2);
 	font-family: "Helvetica Neue", Helvetica, Arial, Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "Nimbus Sans L", "Liberation Sans", Tahoma, Geneva, sans-serif;;
-	font-size: calc( 12px + 4 * (100vw / 1500));
+	font-size: calc( 16px + 4 * (100vw / 1500));
 	line-height: 1.5;
 }
 
@@ -421,7 +421,7 @@ address {
 
 pre {
 	background: #eee;
-	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-family: "Fira Code", "Courier 10 Pitch", Courier, monospace;
 	font-size: 15px;
 	font-size: 0.9375rem;
 	line-height: 1.2;
@@ -432,9 +432,9 @@ pre {
 }
 
 code, kbd, tt, var {
-	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-	font-size: 12px;
-	font-size: 0.75rem;
+	font-family: "Fira Code",  Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+	font-size: 13px;
+	font-size: 0.87rem;
 }
 
 abbr, acronym {
@@ -609,7 +609,7 @@ a#susty-back-link {
 }
 
 a:visited {
-	color: rgb(4, 4, 2);
+	/*color: rgb(4, 4, 2);*/
 }
 
 a:hover, a:focus, a:active {
@@ -848,7 +848,8 @@ header#masthead {
 	align-items: center;
 	max-width: 69em;
 	margin: 2em auto;
-	padding: 0 1em;
+	padding: 0 1rem;
+    border-bottom: 1px solid black;
 }
 
 header#masthead h1, header#masthead p {
@@ -893,7 +894,7 @@ svg * {
 ## Content
 --------------------------------------------------------------*/
 #content {
-	max-width: 43em;
+	max-width: 63em;
 	margin: 0 auto;
 	padding: 0 1em;
 }
